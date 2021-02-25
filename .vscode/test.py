@@ -1,5 +1,14 @@
-filename = 'programming.txt'
+print("Give me two numbers, and I'll divide them. ")
+print("Enter 'q' to quit. ")
 
-with open(filename,'w') as file_object :
-    file_object.write("haha.")
+while True :
+    first_number = input("\nFirst number: ")
+    if first_number == 'q' :
+        break
+    second_number = input("\nSecond number: ")
+    if second_number == 'q' :
+        break
+    answer = int(first_number)/int(second_number)
+    print("\n" + str(answer)) 
+    
 
